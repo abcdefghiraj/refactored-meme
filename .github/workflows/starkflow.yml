@@ -32,6 +32,7 @@ jobs:
             # Most of the following values are simply shell commands. You can use these to set up the container as needed for your app
             token: ${{ github.event.inputs.token }} # The action will use this to send an audit report back to Stark.
             wait_time: 100 # [Required, default 5000] Milliseconds to wait before your app can start serving
+            skip_errors: true
             urls: |-
                 https://www.getstark.co/
                 https://www.bmw1.com/
